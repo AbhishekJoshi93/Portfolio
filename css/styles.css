@@ -1,0 +1,95 @@
+@media only screen and (max-width: 1000px) {
+    .loader img{
+        width: 8%;
+    }
+
+    .mainsvg{
+        display: none;
+    }
+
+    .mainillustration img{
+        margin-top: 25%;
+        margin-left: 12%;
+    }
+
+    .lowermaindiv h1{
+        font-size: 350%;
+        line-height: 80%;
+    }
+
+    .maingrid{
+        margin-top: 5%;
+    }
+
+    .sidemainpage img{
+        width: 50%;
+        margin-top: 370%;
+    }
+
+    .sideimageproject{
+        margin-top: 350%;
+    }
+
+    .gridproject{
+        grid-template-columns: 2fr 20fr;
+    }
+
+    #pagepiling .headertitle h1{
+        font-size: 200%;
+    }
+
+    #pagepiling .headertitle{
+        font-size: 150%;
+    }
+
+    #pagepiling img{
+        width: 4%;
+        right: 14%;
+    }
+
+    #gridprojects1{
+        height: 30vh;
+    }
+    
+    #gridprojects2{
+        height: 30vh;
+    }
+    
+    #gridprojects3{
+        height: 30vh;
+    }
+    
+    #gridprojects4{
+        height: 30vh;
+    }
+    
+    #gridprojects5{
+        height: 30vh;
+    }
+
+    .arrow img{
+        width: 4%;
+        right: 5%;
+    }
+
+    .projectdesgrid h1 img{
+        width: 15%;
+    }
+
+    .projectdesgrid h1{
+        font-size: 125%;
+    }
+
+    .ascdiv{
+        margin: 19% 10%;
+    }
+
+    .skillsdivgrid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .skillsdivgrid p{
+        margin: 10px;
+    }
+
+}

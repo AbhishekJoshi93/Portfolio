@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek | Web Developer</title>
+    <link rel="shortcut icon" href="../images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <section class="loading">
+        <div class="loader">
+            <img src="../images/logo.svg" alt="loading icon">
+        </div>
+    </section>
+
+    <div class="ascdes">
+        <a href="../index.html"><h3 class="cool-link">HOME</h3></a>
+    </div>
+
+    <div class="ascdiv">
+
+        <div class="justmarginpur">
+
+            <div class="ascdivheader">
+                <h3 class="cool-link" id="cool-link1id" onclick="a1()">ABOUT</h3>
+                <h3 class="cool-link" id="cool-link2id" onclick="a2()">SKILLS</h3>
+                <h3 class="cool-link" id="cool-link3id" onclick="a3()">CONTACT</h3>
+            </div>
+    
+            <div class="aboutdiv hiddenclass" id="aboutdivid">
+                <h1>Creative</h1>
+                <h1>Passionate</h1>
+                <h1>Focused</h1>
+                <div class="aboutdivdes">
+                    <p>Currently I'm a student at Charusat University and learning web developing & web designing, who completed variety of projects and also working on diverse projects.</p>
+                    <p>I work to create innovative solutions that inspire. With a focus on features and UI / Web, I strive to create usable and polished products through passionate and deliberate design.</p>
+                </div>
+                <br>
+                <div class="resumediv">
+                    <a href="../images/Resume.pdf">VIEW RESUME</a>
+                </div>
+    
+            </div>
+    
+            <div class="skillsdiv hiddenclass" id="skillsdivid">
+                <div class="frontenddiv">
+                        <h3>Front End Technologies</h3>
+                        <div class="skillsdivgrid">
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                            <p>JS</p>
+                            <p>JQUERY</p>
+                        </div>
+                </div>
+                <div class="backenddiv">
+                        <h3>Back End Technologies</h3>
+                        <div class="skillsdivgrid">
+                            <p>NODEJS</p>
+                            <p>MONGODB</p>
+                            <p>Npm</p>
+                            <p>EJS</p>
+                            <p>EXPRESS</p>
+                            <p>MONGOOSE</p>
+                            <p>API</p>
+                            <p>PASSPORTJS</p>
+                        </div>
+                </div>
+                <div class="extrasdiv">
+                        <h3>Other Technologies</h3>
+                        <div class="skillsdivgrid">
+                            <p>GITHUB</p>
+                            <p>FIREBASE</p>
+                            <p>HEROKU</p>
+                            <p>AWS</p>
+                        </div>
+                </div>
+            </div>
+    
+            <div class="contactdiv hiddenclass" id="contactdivid">
+                <h1>Let's Build</h1>
+                <h1>Something</h1>
+                <h1>Together</h1>
+                <div class="getdiv">
+                    <p>Get In Touch</p>
+                </div>
+                <div class="extrasdiv">
+                    <p>joshiabhishek932000@gmail.com</p>
+                    <p>6353266085</p>
+                    <p>Gujarat, India</p>
+                </div>
+
+                <div class="getlinksdiv">
+                    <a href="https://github.com/AbhishekJoshi93"><img src="../images/github.svg" alt="github"></a>
+                    <a href="https://www.hackerrank.com/joshiabhishek931"><img src="../images/hackerrank.svg" alt="hackerrank"></a>
+                    <a href="https://www.linkedin.com/in/abhishek-joshi-132a5a182"><img src="../images/linkedin.svg" alt="linkedin"></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>      
+        $(window).on("load", () => {
+            $(".loader").fadeOut("slow");
+        });
+        function a1(){
+            document.getElementById("aboutdivid").classList.add("displaydiv");
+            document.getElementById("aboutdivid").classList.remove("hiddenclass");
+            document.getElementById("skillsdivid").classList.remove("displaydiv");
+            document.getElementById("skillsdivid").classList.add("hiddenclass");
+            document.getElementById("contactdivid").classList.remove("displaydiv");
+            document.getElementById("contactdivid").classList.add("hiddenclass");
+            document.getElementById("cool-link1id").style.color = "#00B0FF";
+            document.getElementById("cool-link2id").style.color = "#000000"; 
+            document.getElementById("cool-link3id").style.color = "#000000"; 
+        }
+        function a2(){
+            document.getElementById("aboutdivid").classList.remove("displaydiv");
+            document.getElementById("aboutdivid").classList.add("hiddenclass");
+            document.getElementById("skillsdivid").classList.add("displaydiv");
+            document.getElementById("skillsdivid").classList.remove("hiddenclass");
+            document.getElementById("contactdivid").classList.remove("displaydiv");
+            document.getElementById("contactdivid").classList.add("hiddenclass");
+            document.getElementById("cool-link1id").style.color = "#000000"; 
+            document.getElementById("cool-link2id").style.color = "#00B0FF";
+            document.getElementById("cool-link3id").style.color = "#000000";  
+        }
+        function a3(){
+            document.getElementById("aboutdivid").classList.remove("displaydiv");
+            document.getElementById("aboutdivid").classList.add("hiddenclass");
+            document.getElementById("skillsdivid").classList.remove("displaydiv");
+            document.getElementById("skillsdivid").classList.add("hiddenclass");
+            document.getElementById("contactdivid").classList.add("displaydiv");
+            document.getElementById("contactdivid").classList.remove("hiddenclass");
+            document.getElementById("cool-link1id").style.color = "#000000"; 
+            document.getElementById("cool-link2id").style.color = "#000000"; 
+            document.getElementById("cool-link3id").style.color = "#00B0FF";
+        }
+    </script>
+
+</body>
+</html>

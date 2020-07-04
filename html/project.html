@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek | Web Developer</title>
+    <link rel="shortcut icon" href="../images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.css">
+</head>
+<body>
+    <div class="gridproject">
+        <div class="sideimageproject">
+            <a href="../index.html"><img src="../images/menu.svg" alt="menu"></a>
+        </div>
+        <div id="pagepiling">
+            <div class="section" id="section1">
+                <div class="upperlineprojects">
+                    <h1>01</h1>
+                </div>
+                <div class="headertitle">
+                    <h1>Socially</h1>
+                    <p>Frontend & Backend Website</p>
+                </div>
+                <a href="socially.html"><img src="../images/arrow.svg" alt="arrow"></a>
+            </div>
+            <div class="section" id="section2">
+                <div class="upperlineprojects">
+                    <h1>02</h1>
+                </div>
+                <div class="headertitle">
+                    <h1>Happy Home</h1>
+                    <p>Frontend & Backend Website</p>
+                </div>
+                <a href="happyhome.html"><img src="../images/arrow.svg" alt="arrow"></a>
+            </div>
+            <div class="section" id="section3">
+                <div class="upperlineprojects">
+                    <h1>03</h1>
+                </div>
+                <div class="headertitle">
+                    <h1>Book My Trip</h1>
+                    <p>Frontend & Backend Website</p>
+                </div>
+                <a href="bookmytrip.html"><img src="../images/arrow.svg" alt="arrow"></a>
+            </div>
+            <div class="section" id="section4">
+                <div class="upperlineprojects">
+                    <h1>04</h1>
+                </div>
+                <div class="headertitle">
+                    <h1>Travello</h1>
+                    <p>Frontend Website</p>
+                </div>
+                <a href="travello.html"><img src="../images/arrow.svg" alt="arrow"></a>
+            </div>
+            <div class="section" id="section5">
+                <div class="upperlineprojects">
+                    <h1>05</h1>
+                </div>
+                <div class="headertitle">
+                    <h1>Resto</h1>
+                    <p>Frontend Website</p>
+                </div>
+                <a href="resto.html"><img src="../images/arrow.svg" alt="arrow"></a>
+            </div>
+        </div>
+
+    </div>
+    
+    <script>
+        $(document).ready(function() {
+	$('#pagepiling').pagepiling({
+	    menu: null,
+        direction: 'vertical',
+        verticalCentered: true,
+        sectionsColor: [],
+        anchors: [],
+        scrollingSpeed: 700,
+        easing: 'swing',
+        loopBottom: false,
+        loopTop: false,
+        css3: true,
+        navigation: {
+            'textColor': '#fff',
+            'bulletsColor': '#fff',
+            'position': 'right',
+            'tooltips': ['Socially', 'Happy Home', 'Book My Trip', 'Travello', 'Resto']
+        },
+       	normalScrollElements: null,
+        normalScrollElementTouchThreshold: 5,
+        touchSensitivity: 5,
+        keyboardScrolling: true,
+        sectionSelector: '.section',
+        animateAnchor: false,
+
+		onLeave: function(index, nextIndex, direction){},
+		afterLoad: function(anchorLink, index){},
+		afterRender: function(){},
+	});
+});
+    </script>
+
+<script>      
+    $(window).on("load", () => {
+        $(".loader").fadeOut("slow");
+    });
+</script>
+    
+</body>
+</html>
