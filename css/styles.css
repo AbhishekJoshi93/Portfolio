@@ -12,8 +12,12 @@
         margin-left: 12%;
     }
 
+    .uppermaindiv p{
+        font-size: 15px;
+    }
+
     .lowermaindiv h1{
-        font-size: 350%;
+        font-size: 40px;
         line-height: 80%;
     }
 
@@ -35,11 +39,11 @@
     }
 
     #pagepiling .headertitle h1{
-        font-size: 200%;
+        font-size: 40px;
     }
 
     #pagepiling .headertitle{
-        font-size: 150%;
+        font-size: 22px;
     }
 
     #pagepiling img{
@@ -77,7 +81,7 @@
     }
 
     .projectdesgrid h1{
-        font-size: 125%;
+        font-size: 25px;
     }
 
     .ascdiv{
@@ -85,11 +89,17 @@
     }
 
     .skillsdivgrid{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .skillsdivgrid p{
         margin: 10px;
     }
+
+    #pagepiling .headertitle{
+        bottom: 5%;
+    }
+
+
 
 }
